@@ -31,34 +31,7 @@ const config: Config = {
     },
   },
   plugins: [
-    function({ addUtilities }) {
-      addUtilities({
-        '.scrollbar-hidden': {
-          /* Hide scrollbar for IE, Edge and Firefox */
-          '-ms-overflow-style': 'none',  /* IE and Edge */
-          'scrollbar-width': 'none',  /* Firefox */
-        },
-        '.scrollbar-hidden::-webkit-scrollbar': {
-          display: 'none',  /* Safari and Chrome */
-        },
-        '.scrollbar-custom': {
-          /* WebKit based browsers */
-          '&::-webkit-scrollbar': {
-            height: '8px',
-          },
-          '&::-webkit-scrollbar-track': {
-            background: '#f1f1f1',
-          },
-          '&::-webkit-scrollbar-thumb': {
-            background: '#c1c1c1',
-            borderRadius: '10px',
-          },
-          '&::-webkit-scrollbar-thumb:hover': {
-            background: '#a1a1a1',
-          },
-        },
-      })
-    }
+    
   ],
 };
 
