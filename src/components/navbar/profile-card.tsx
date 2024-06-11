@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import LinkButton from "@/components/ui/link-button";
+import Button from "../ui/btn";
 
 type Props = {
   profileImageSrc: string;
@@ -26,10 +27,8 @@ const ProfileCard: React.FC<Props> = ({ profileImageSrc, userName }) => {
           className="object-cover"
         />
         <div className="text-white flex items-center">
-          <span className="font-semibold">{userName}</span>
-          <button onClick={toggleDropdown} className="ml-1 focus:outline-none">
-            &#9662;
-          </button>
+          <span className=" text-[15px] font-poppins">{userName}</span>
+          <Button onClick={toggleDropdown} buttonClass="ml-1 focus:outline-none">&#9662;</Button>           
         </div>
       </div>
       {dropdownOpen && (

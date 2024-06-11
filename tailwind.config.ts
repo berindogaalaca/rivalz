@@ -15,6 +15,8 @@ const config: Config = {
         lightyellow: "#F9DC5C",
         lightgreen: "#E5F993",
         dropcolor: "#FFC83C",
+      },fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

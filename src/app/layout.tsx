@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/components/header";
 
 const poppins = Poppins({
-  weight: ["300", "400", "500","600","700"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
 });
 
@@ -19,10 +19,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className="bg-custom-header bg-cover bg-center h-[726px] w-full bg-no-repeat"
+    >
       <body className={poppins.className}>
-        <Header/>
-        
+        <Header />
         {children}
       </body>
     </html>
