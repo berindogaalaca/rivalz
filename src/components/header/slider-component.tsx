@@ -62,14 +62,14 @@ const SliderComponent: React.FC = () => {
         </div>
         <div className="absolute left-4  space-x-2">
           {data?.map((_, index) => (
-            <Button
+            <button
               onClick={() => goToSlide(index)}
               key={index}
-              buttonClass={`w-10 h-1 rounded-full ${
+              className={`w-10 h-1 rounded-full ${
                 index === currentSlide ? "bg-blue-500" : "bg-gray-400"
               }`}
               
-            > </Button>
+            > </button>
           ))}
         </div>
       </div>
