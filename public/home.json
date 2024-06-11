@@ -1,24 +1,28 @@
 {
   "data": [
     {
+      "id": 1,
       "image": "/home1.png",
       "title": "Presented by Rivalz Studios",
-      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea. However, Kiko's passion for learning and curiosity are different from other sharks. One day, he comes across the wreckage of an old submarine at the bottom of the sea. Kiko is determined to find out what's inside this mysterious wreck."
+      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea.\nHowever, Kiko's passion for learning and curiosity are different from other sharks.\nOne day, he comes across the wreckage of an old submarine at the bottom of the sea.\nKiko is determined to find out what's inside this mysterious wreck."
     },
     {
+      "id": 2,
       "image": "/home1.png",
-      "title": "Presented by Rivalz Studios",
-      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea. However, Kiko's passion for learning and curiosity are different from other sharks. One day, he comes across the wreckage of an old submarine at the bottom of the sea. Kiko is determined to find out what's inside this mysterious wreck."
+      "title": "Slide 2",
+      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea.\nHowever, Kiko's passion for learning and curiosity are different from other sharks.\nOne day, he comes across the wreckage of an old submarine at the bottom of the sea.\nKiko is determined to find out what's inside this mysterious wreck."
     },
     {
+      "id": 3,
       "image": "/home1.png",
-      "title": "Presented by Rivalz Studios",
-      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea. However, Kiko's passion for learning and curiosity are different from other sharks. One day, he comes across the wreckage of an old submarine at the bottom of the sea. Kiko is determined to find out what's inside this mysterious wreck."
+      "title": "Slide 3",
+      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea.\nHowever, Kiko's passion for learning and curiosity are different from other sharks.\nOne day, he comes across the wreckage of an old submarine at the bottom of the sea.\nKiko is determined to find out what's inside this mysterious wreck."
     },
     {
+      "id": 4,
       "image": "/home1.png",
-      "title": "Presented by Rivalz Studios",
-      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea. However, Kiko's passion for learning and curiosity are different from other sharks. One day, he comes across the wreckage of an old submarine at the bottom of the sea. Kiko is determined to find out what's inside this mysterious wreck."
+      "title": "Slide 4",
+      "paragraph": "Kiko is the most cheerful and adventurous shark of the sea.\nHowever, Kiko's passion for learning and curiosity are different from other sharks.\nOne day, he comes across the wreckage of an old submarine at the bottom of the sea.\nKiko is determined to find out what's inside this mysterious wreck."
     }
   ]
 }

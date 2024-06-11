@@ -1,15 +1,12 @@
-import React from 'react';
-import styles from './Button.module.css';
+import React from "react";
 
 type ButtonProps = {
   onClick: () => void;
   children: React.ReactNode;
-  buttonClass:string
+  buttonClass: string;
 };
 
 const Button = ({ onClick, children, buttonClass }: ButtonProps) => {
-
-
   return (
     <button className={buttonClass} onClick={onClick}>
       {children}
