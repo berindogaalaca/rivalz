@@ -68,7 +68,7 @@ const SliderComponent: React.FC = () => {
               buttonClass={`w-10 h-1 rounded-full ${
                 index === currentSlide ? "bg-blue-500" : "bg-gray-400"
               }`}
-              children={undefined}
+              children=""
             ></Button>
           ))}
         </div>
