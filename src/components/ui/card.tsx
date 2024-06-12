@@ -1,4 +1,5 @@
 import React from "react";
+import { twMerge } from "tailwind-merge";
 
 type CardProps = {
   imageSrc: string;
@@ -6,7 +7,7 @@ type CardProps = {
   subtitle: string;
   label: string;
   tag: string;
-  tagClassname: string;
+  badgeType: string;
 };
 
 const Card: React.FC<CardProps> = ({
@@ -15,8 +16,17 @@ const Card: React.FC<CardProps> = ({
   subtitle,
   label,
   tag,
-  tagClassname,
+  badgeType,
 }) => {
+  const badgeClass: Record<string, string> = {
+    purple: "bg-purple",
+    yellow: "bg-yellow",
+    grey: "bg-grey",
+    custom: "bg-gradient-custom",
+  };
+
+  const selectedBadge = badgeClass[badgeType];
+
   return (
     <div className="relative w-[284px] shadow-lg text-black">
       <div
@@ -24,7 +34,14 @@ const Card: React.FC<CardProps> = ({
         style={{ backgroundImage: `url(${imageSrc})` }}
       >
         <div>
-          <div className={tagClassname}>{tag}</div>
+          <div
+            className={twMerge(
+              "absolute top-4 right-[-10px] bg-opacity-80 font-medium font-poppins text-black px-2 py-1 text-xs",
+              selectedBadge
+            )}
+          >
+            {tag}
+          </div>
         </div>
         <div className="p-4">
           {label && (

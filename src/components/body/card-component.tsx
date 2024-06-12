@@ -2,9 +2,7 @@ import React from "react";
 import Card from "../ui/card";
 import { cardData } from "@/dummy/dummy";
 
-type Props = {};
-
-const CardComponent = (props: Props) => {
+const CardComponent = () => {
   return (
     <div className="container mx-auto mt-40 md:mt-40 flex flex-col items-center md:grid md:grid-cols-2 md:gap-4 md:justify-between lg:grid-cols-3 xl:grid-cols-4">
       {cardData.map((card, index) => (
@@ -15,7 +13,7 @@ const CardComponent = (props: Props) => {
             subtitle={card.subtitle}
             label={card.label}
             tag={card.tag}
-            tagClassname={card.tagClassname}
+            badgeType={card.badgeType}
           />
         </div>
       ))}
