@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import Body from "@/components/body";
-import { ConfigProvider } from "@/lib/readData";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700"],
@@ -26,9 +25,7 @@ export default function RootLayout({
       className="bg-custom-header bg-cover bg-center h-[726px] w-full bg-no-repeat"
     >
       <body className={poppins.className}>
-        <ConfigProvider>
-          <Header />
-        </ConfigProvider>
+        <Header />
 
         <Body />
         {children}

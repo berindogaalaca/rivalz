@@ -2,8 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Button from "../ui/btn";
-import { useConfig } from "@/lib/readData";
-
+import { headerData } from "@/dummy/dummy";
 
 const SliderComponent: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -15,12 +14,11 @@ const SliderComponent: React.FC = () => {
     console.log("tıklandı");
   };
 
-  const { data } = useConfig();
 
   return (
-    <div className="container mx-auto mt-12 flex">
-      <div className="relative w-1/2 md:w-auto">
-        {data?.map((item, index) => (
+    <div className="container mx-auto mt-12 flex flex-col items-center md:flex-row">
+      <div className="relative w-full md:w-1/2 lg:w-auto">
+        {headerData?.map((item, index) => (
           <div
             key={item.id}
             className={`${
@@ -61,7 +59,7 @@ const SliderComponent: React.FC = () => {
           </Button>
         </div>
         <div className="absolute left-4  space-x-2">
-          {data?.map((_, index) => (
+          {headerData?.map((_, index) => (
             <button
               onClick={() => goToSlide(index)}
               key={index}
