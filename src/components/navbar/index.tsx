@@ -16,7 +16,7 @@ export default function Navbar({}: Props) {
       <div className="flex justify-between items-center">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          buttonClass="lg:hidden text-white"
+          buttonClass="lg:hidden mx-5 text-white"
         >
           <Menu />
         </Button>
